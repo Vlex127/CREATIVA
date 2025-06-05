@@ -8,31 +8,40 @@
     <!-- Link to stylesheet will go here -->
     <link rel="stylesheet" href="assets/styles.css">
     <style>
-        /* Basic styling to mimic the layout - full styling would require a separate CSS file */
+        /* Basic styling to mimic the layout */
         
         body {
             margin: 0;
-            font-family: sans-serif;
-            /* Use a common sans-serif font */
+            font-family: 'Arial', sans-serif;
+            /* Using a common sans-serif font, adjust if a specific font is needed */
             background-color: #000;
-            /* Background color from the image */
+            /* Background color for the whole page */
             color: #fff;
-            /* Text color */
+            /* Default text color */
+            overflow-x: hidden;
+            /* Prevent horizontal scrollbar due to background shape */
         }
         
         header {
             background-color: #f5e5e0;
             /* Header background color */
             color: #000;
-            padding: 10px 20px;
+            padding: 10px 40px;
+            /* Increased padding */
             display: flex;
             justify-content: space-between;
             align-items: center;
+            position: relative;
+            /* Needed for the angled bottom edge effect */
+            z-index: 10;
+            /* Ensure header is above hero section */
         }
         
         header .logo {
             font-size: 24px;
             font-weight: bold;
+            color: #000;
+            /* Logo text color */
         }
         
         nav ul {
@@ -43,58 +52,104 @@
         }
         
         nav ul li {
-            margin-left: 20px;
+            margin-left: 30px;
+            /* Increased space between links */
         }
         
         nav ul li a {
             text-decoration: none;
             color: #000;
+            font-weight: bold;
+            /* Make navigation links bold */
         }
         
         .header-register-btn {
             background-color: transparent;
             border: 1px solid #000;
-            padding: 5px 15px;
+            padding: 8px 20px;
+            /* Adjusted padding */
             border-radius: 20px;
             cursor: pointer;
+            font-weight: bold;
+            /* Make button text bold */
         }
         
         .hero-section {
             display: flex;
-            align-items: center;
-            padding: 50px 20px;
             position: relative;
-            /* Needed for absolute positioning of image */
-            overflow: hidden;
-            /* Hide overflowing parts of the image */
+            min-height: 600px;
+            /* Minimum height for the section */
+            color: #fff;
         }
         
-        .hero-content {
+        .hero-left {
+            flex: 1;
+            /* Take up remaining space */
+            background-color: #000;
+            padding: 80px 40px 80px 80px;
+            /* Adjusted padding */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             z-index: 1;
-            /* Ensure content is above the image */
-            max-width: 500px;
-            margin-right: 50px;
+            /* Ensure text is above the angled background */
         }
         
-        .hero-content h1 {
+        .hero-left h1 {
             font-size: 48px;
             margin-bottom: 20px;
+            line-height: 1.2;
+            /* Improve line spacing */
         }
         
-        .hero-content p {
+        .hero-left p {
             font-size: 18px;
             margin-bottom: 30px;
+            line-height: 1.5;
+            /* Improve line spacing */
         }
         
         .hero-register-btn {
             background-color: #fff;
             color: #000;
             border: none;
-            padding: 10px 20px;
-            border-radius: 20px;
+            padding: 12px 25px;
+            /* Adjusted padding */
+            border-radius: 25px;
+            /* More rounded corners */
             cursor: pointer;
-            font-size: 16px;
+            font-size: 18px;
             font-weight: bold;
+            width: fit-content;
+            /* Button width fits content */
+        }
+        
+        .hero-right {
+            flex: 1;
+            /* Take up remaining space */
+            background-color: #f5e5e0;
+            /* Light pink/beige background */
+            position: relative;
+            overflow: hidden;
+            /* Hide overflowing parts of the image */
+        }
+        
+        .hero-right::before {
+            /* Angled background effect */
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100px;
+            /* Adjust to control the angle and overlap */
+            bottom: 0;
+            width: 200px;
+            /* Width of the angled section */
+            background-color: #f5e5e0;
+            transform: skewX(-10deg);
+            /* Adjust angle as needed */
+            transform-origin: top left;
+            z-index: 0;
+            /* Place behind the image and content */
         }
         
         .hero-image {
@@ -105,16 +160,15 @@
             /* Adjust height as needed */
             width: auto;
             /* Maintain aspect ratio */
-            z-index: 0;
-            /* Place image behind content */
+            z-index: 1;
+            /* Ensure image is above the angled background */
         }
+        /* Basic star background - more advanced techniques would be needed for perfect replication */
         
-        .logo-image {
-            /* New class for styling the logo image */
-            height: 40px;
-            /* Adjust height as needed */
-            width: auto;
-            /* Maintain aspect ratio */
+        .hero-left {
+            /* Existing styles */
+            background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 40px 40px;
         }
     </style>
 </head>
@@ -122,7 +176,7 @@
 <body>
 
     <header>
-        <div class="logo"><img src="assets/images/Screenshot 2025-06-05 150209.png" alt="Company Logo" class="logo-image"></div>
+        <div class="logo">CA</div>
         <nav>
             <ul>
                 <li><a href="#">Our Lessons</a></li>
@@ -136,13 +190,15 @@
 
     <main>
         <section class="hero-section">
-            <div class="hero-content">
+            <div class="hero-left">
                 <h1>Join Our 1-Month<br>Beginner CapCut Editing<br>Class!</h1>
                 <p>Learn how to confidently edit TikTok videos using CapCut — even if you're starting from scratch!</p>
                 <button class="hero-register-btn">Register Now</button>
             </div>
-            <!-- Using the large image found in the assets/images folder -->
-            <img src="assets/images/IMG_2624 1.png" alt="Illustration of a person editing on a laptop" class="hero-image">
+            <div class="hero-right">
+                <!-- Using the large image found in the assets/images folder -->
+                <img src="assets/images/IMG_2624 1.png" alt="Illustration of a person editing on a laptop" class="hero-image">
+            </div>
         </section>
     </main>
 
