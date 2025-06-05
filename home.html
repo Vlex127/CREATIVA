@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CapCut Editing Class</title>
     <!-- Link to stylesheet will go here -->
-    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="assets/styles.css">
     <style>
         /* Basic styling to mimic the layout - full styling would require a separate CSS file */
         
@@ -108,13 +108,21 @@
             z-index: 0;
             /* Place image behind content */
         }
+        
+        .logo-image {
+            /* New class for styling the logo image */
+            height: 40px;
+            /* Adjust height as needed */
+            width: auto;
+            /* Maintain aspect ratio */
+        }
     </style>
 </head>
 
 <body>
 
     <header>
-        <div class="logo">CA</div>
+        <div class="logo"><img src="assets/images/Screenshot 2025-06-05 150209.png" alt="Company Logo" class="logo-image"></div>
         <nav>
             <ul>
                 <li><a href="#">Our Lessons</a></li>
