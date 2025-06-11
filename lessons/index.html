@@ -2,20 +2,156 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Our Lessons</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Lessons - CapCut Editing Class</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+        /* Subtle background elements, consistent with other pages */
+        
+        .page-bg-elements {
+            background-image: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0.5px, transparent 0.5px);
+            background-size: 40px 40px;
+            background-position: 0 0, 20px 20px;
+        }
+    </style>
 </head>
 
-<body class="bg-white font-sans">
-    <section class="text-gray-600 body-font">
-        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-            <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Our Lessons Page
-                </h1>
-                <p class="mb-8 leading-relaxed">This is the Our Lessons page content. You can update this with your actual information.</p>
+<body class="bg-[#242424]">
+    <div class="bg-[#242424] px-4 pt-4 sm:px-8 sm:pt-8">
+        <nav class="flex justify-between items-center bg-white py-3 px-6 rounded-2xl shadow-lg relative z-20 max-w-7xl mx-auto">
+            <div class="text-2xl font-extrabold italic text-gray-800">
+                <img src="/CREATIVA/assets/images/IMG_6957 1.png" class="h-9 sm:h-10" alt="Creativa Logo">
             </div>
+            <ul class="hidden md:flex space-x-6 lg:space-x-8 font-medium text-gray-700">
+                <li><a href="/CREATIVA/lessons" class="hover:text-purple-700 transition duration-300">Our Lessons</a></li>
+                <li><a href="/CREATIVA/prices" class="hover:text-purple-700 transition duration-300">Prices</a></li>
+                <li><a href="/CREATIVA/about" class="hover:text-purple-700 transition duration-300">About Us</a></li>
+                <li><a href="#" class="hover:text-purple-700 transition duration-300">Contact Us</a></li>
+            </ul>
+            <button class="bg-black text-white px-5 py-2 rounded-3xl font-semibold shadow-md hover:bg-gray-800 transition duration-300 transform hover:scale-105 hidden sm:block text-sm">
+                Register Now
+            </button>
+            <div class="md:hidden">
+                <button class="text-gray-600 hover:text-gray-800 focus:outline-none">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </div>
+
+    <section class="py-16 sm:py-24 page-bg-elements">
+        <div class="container mx-auto px-5">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl sm:text-5xl font-extrabold text-white mb-4">Our CapCut Masterclass Lessons</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-400">
+                    Dive into our comprehensive 4-week program designed to transform you into a CapCut pro! Each module builds on the last, ensuring a strong foundation and advanced techniques.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="bg-white p-8 sm:p-10 rounded-2xl shadow-2xl flex flex-col items-start transform transition-all duration-300 hover:scale-[1.02] cursor-pointer">
+                    <div class="flex items-center justify-center w-12 h-12 bg-purple-600 rounded-full text-white text-xl font-bold mb-4">1</div>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2">Module 1: CapCut Fundamentals</h2>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Get started with the CapCut interface, basic navigation, importing media, and essential editing tools like cutting, trimming, and splitting clips.
+                    </p>
+                    <ul class="text-gray-600 text-sm list-disc list-inside space-y-1">
+                        <li>Interface Overview</li>
+                        <li>Importing & Organizing Media</li>
+                        <li>Basic Trimming & Cutting</li>
+                        <li>Audio Fundamentals</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 sm:p-10 rounded-2xl shadow-2xl flex flex-col items-start transform transition-all duration-300 hover:scale-[1.02] cursor-pointer">
+                    <div class="flex items-center justify-center w-12 h-12 bg-purple-600 rounded-full text-white text-xl font-bold mb-4">2</div>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2">Module 2: Enhancing Your Visuals</h2>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Learn to add flair with transitions, effects, filters, and overlays. Master color correction to make your footage pop.
+                    </p>
+                    <ul class="text-gray-600 text-sm list-disc list-inside space-y-1">
+                        <li>Transitions & Animations</li>
+                        <li>Video Effects & Filters</li>
+                        <li>Color Grading Basics</li>
+                        <li>Image Overlays</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 sm:p-10 rounded-2xl shadow-2xl flex flex-col items-start transform transition-all duration-300 hover:scale-[1.02] cursor-pointer">
+                    <div class="flex items-center justify-center w-12 h-12 bg-purple-600 rounded-full text-white text-xl font-bold mb-4">3</div>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2">Module 3: Text, Sound & Advanced Tools</h2>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Integrate dynamic text, perfect your audio with sound effects and music, and explore advanced features like keyframes and mask.
+                    </p>
+                    <ul class="text-gray-600 text-sm list-disc list-inside space-y-1">
+                        <li>Text & Titles</li>
+                        <li>Music & Sound Effects</li>
+                        <li>Voiceovers</li>
+                        <li>Keyframe Animation</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 sm:p-10 rounded-2xl shadow-2xl flex flex-col items-start transform transition-all duration-300 hover:scale-[1.02] cursor-pointer">
+                    <div class="flex items-center justify-center w-12 h-12 bg-purple-600 rounded-full text-white text-xl font-bold mb-4">4</div>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2">Module 4: Exporting & Sharing Mastery</h2>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Optimize your videos for different platforms, understand resolution and frame rates, and learn best practices for sharing your creations.
+                    </p>
+                    <ul class="text-gray-600 text-sm list-disc list-inside space-y-1">
+                        <li>Export Settings</li>
+                        <li>Platform Optimization (TikTok, Instagram)</li>
+                        <li>Video Compression</li>
+                        <li>Troubleshooting</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 sm:p-10 rounded-2xl shadow-2xl flex flex-col items-start transform transition-all duration-300 hover:scale-[1.02] cursor-pointer">
+                    <div class="flex items-center justify-center w-12 h-12 bg-purple-600 rounded-full text-white text-xl font-bold mb-4"><i class="fas fa-magic"></i></div>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2">Bonus: Creative Storytelling Tips</h2>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Beyond the tools, discover how to craft compelling narratives, engage your audience, and develop your unique editing style.
+                    </p>
+                    <ul class="text-gray-600 text-sm list-disc list-inside space-y-1">
+                        <li>Narrative Structures</li>
+                        <li>Pacing & Rhythm</li>
+                        <li>Audience Engagement</li>
+                        <li>Developing Your Style</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 sm:p-10 rounded-2xl shadow-2xl flex flex-col items-start transform transition-all duration-300 hover:scale-[1.02] cursor-pointer">
+                    <div class="flex items-center justify-center w-12 h-12 bg-purple-600 rounded-full text-white text-xl font-bold mb-4"><i class="fas fa-project-diagram"></i></div>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2">Capstone Project Workshop</h2>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Apply all your learned skills in a guided project, receiving feedback and refining your final CapCut masterpiece.
+                    </p>
+                    <ul class="text-gray-600 text-sm list-disc list-inside space-y-1">
+                        <li>Project Brief & Planning</li>
+                        <li>Guided Editing Sessions</li>
+                        <li>Peer & Instructor Feedback</li>
+                        <li>Final Submission & Review</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-16">
+                <p class="text-xl text-white mb-6">Ready to transform your editing skills?</p>
+                <a href="/CREATIVA/prices" class="inline-block bg-white text-black py-3 px-10 rounded-3xl font-semibold shadow-lg hover:bg-gray-200 transition duration-300 transform hover:scale-105">
+                    View Our Pricing
+                </a>
+            </div>
+
         </div>
     </section>
 </body>
