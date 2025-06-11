@@ -2,20 +2,123 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - CapCut Editing Class</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+        /* Subtle background elements, consistent with other pages */
+        
+        .page-bg-elements {
+            background-image: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0.5px, transparent 0.5px);
+            background-size: 40px 40px;
+            background-position: 0 0, 20px 20px;
+        }
+    </style>
 </head>
 
-<body class="bg-white font-sans">
-    <section class="text-gray-600 body-font">
-        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-            <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">About Us Page
-                </h1>
-                <p class="mb-8 leading-relaxed">This is the About Us page content. You can update this with your actual information.</p>
+<body class="bg-[#242424]">
+    <div class="bg-[#242424] px-4 pt-4 sm:px-8 sm:pt-8">
+        <nav class="flex justify-between items-center bg-white py-3 px-6 rounded-2xl shadow-lg relative z-20 max-w-7xl mx-auto">
+            <div class="text-2xl font-extrabold italic text-gray-800">
+                <img src="/CREATIVA/assets/images/IMG_6957 1.png" class="h-9 sm:h-10" alt="Creativa Logo">
             </div>
+            <ul class="hidden md:flex space-x-6 lg:space-x-8 font-medium text-gray-700">
+                <li><a href="/CREATIVA/lessons" class="hover:text-purple-700 transition duration-300">Our Lessons</a></li>
+                <li><a href="/CREATIVA/prices" class="hover:text-purple-700 transition duration-300">Prices</a></li>
+                <li><a href="/CREATIVA/about" class="hover:text-purple-700 transition duration-300">About Us</a></li>
+                <li><a href="#" class="hover:text-purple-700 transition duration-300">Contact Us</a></li>
+            </ul>
+            <button class="bg-black text-white px-5 py-2 rounded-3xl font-semibold shadow-md hover:bg-gray-800 transition duration-300 transform hover:scale-105 hidden sm:block text-sm">
+                Register Now
+            </button>
+            <div class="md:hidden">
+                <button class="text-gray-600 hover:text-gray-800 focus:outline-none">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </div>
+
+    <section class="py-16 sm:py-24 page-bg-elements">
+        <div class="container mx-auto px-5">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl sm:text-5xl font-extrabold text-white mb-4">About Creativa Studios</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-400">
+                    Empowering the next generation of digital storytellers.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 sm:p-10 rounded-2xl shadow-2xl mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Our Story</h2>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    At Creativa Studios, we believe that everyone has a story to tell, and in today's digital world, video is the most powerful medium. We founded Creativa Studios with a simple mission: to demystify video editing and make it accessible to everyone, regardless
+                    of their technical background.
+                </p>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Our journey began when we noticed the growing demand for engaging short-form video content on platforms like TikTok and Instagram, paired with the desire of many individuals to create their own. CapCut emerged as the ideal tool – powerful, yet intuitive.
+                    We built our curriculum around real-world application, ensuring our students not only learn the software but also master the art of storytelling through video.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    We are passionate about nurturing creativity and equipping our students with the skills they need to confidently produce stunning videos that capture attention and tell their unique stories.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white p-8 sm:p-10 rounded-2xl shadow-2xl">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i class="fas fa-bullseye text-purple-600 mr-3"></i> Our Mission
+                    </h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        To provide high-quality, practical, and engaging CapCut editing classes that empower beginners to become confident video creators, capable of producing professional-looking content for any platform.
+                    </p>
+                </div>
+                <div class="bg-white p-8 sm:p-10 rounded-2xl shadow-2xl">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i class="fas fa-lightbulb text-purple-600 mr-3"></i> Our Vision
+                    </h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        To be the leading online resource for accessible and effective video editing education, fostering a global community of skilled and creative storytellers.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 sm:p-10 rounded-2xl shadow-2xl mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Why Choose Us?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                    <div>
+                        <i class="fas fa-user-graduate text-purple-600 text-4xl mb-4"></i>
+                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Expert Instructors</h4>
+                        <p class="text-gray-600 text-sm">Learn from seasoned professionals with real-world experience.</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-cogs text-purple-600 text-4xl mb-4"></i>
+                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Practical Approach</h4>
+                        <p class="text-gray-600 text-sm">Hands-on exercises and projects that build confidence.</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-users text-purple-600 text-4xl mb-4"></i>
+                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Supportive Community</h4>
+                        <p class="text-gray-600 text-sm">Join a vibrant community of fellow learners and creators.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <p class="text-xl text-white mb-6">Ready to start your video editing journey?</p>
+                <a href="/CREATIVA/lessons" class="inline-block bg-white text-black py-3 px-10 rounded-3xl font-semibold shadow-lg hover:bg-gray-200 transition duration-300 transform hover:scale-105">
+                    Explore Our Lessons
+                </a>
+            </div>
+
         </div>
     </section>
 </body>
